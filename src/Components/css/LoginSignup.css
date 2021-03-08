@@ -1,0 +1,69 @@
+.login{
+    height: 100vh;
+    padding-top: 10rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btncolor{
+    background-color: #CB4335  ; 
+    border: none;
+}
+.btncolor:hover{
+    background-color:  #E74C3C;    
+}
+
+.linkcolor:hover{
+    color: #CB4335;
+    text-decoration: none;
+}
+.signup{
+    height:100%;
+    position: relative;  
+    font-family: 'Poppins', sans-serif;  
+}
+.signup .container{
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+.signup .container .card{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+.fa-window-close{
+   font-size: 1.3rem;
+   text-align: center;
+   margin-top: 1rem;
+   
+}
+
+@media (max-width: 576px){
+   
+}
+
+
+/* admin login css */
+
+.adminLogin{
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.adminLogin .container{
+    margin-top: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

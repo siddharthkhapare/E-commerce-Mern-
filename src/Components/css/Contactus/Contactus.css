@@ -1,0 +1,145 @@
+.contactusParallax {
+    margin-top: 3.5rem;
+    background: url(../../../images/Contactus/bg-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins';
+
+    color: white;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactusParallax h1{
+    z-index: 1;
+    
+    letter-spacing: 1px;
+    text-transform: capitalize;    
+    position: relative;
+    font-family: 'Poppins';
+}
+.contactusParallax p{
+   font-size: 20px;
+   z-index: 1;
+   position: absolute;
+   margin-top: 8rem;
+   text-align: center;
+}
+
+.contactusParallax .color-overlay{
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .7;
+    position: absolute;
+}
+
+
+
+
+
+.contactus{
+    /* height: 600px; */
+    background: #CCCCFF;
+    width: 100%;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+.contactus .bg-image{
+    background: url(../../../images/Contactus/typing-A.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.contactus .contactForm{
+    
+    height: 600px;
+    width: 100%;
+    padding: 2rem;
+}
+.contactus .contactForm .address,.email,.phone{
+    margin-top: 1rem;
+}
+.contactus form .form-control{
+    background: #CCCCFF;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    box-shadow: none;
+}
+.contactus form .form-control:focus{
+    border-bottom: 1px solid yellowgreen;
+}
+
+.contactus .contactForm form input{
+    font-size: 0.9rem;
+}
+.contactus .contactForm form textarea{
+    font-size: 0.9rem;
+    resize: none;
+}
+.contactus form button{
+    border: none;
+    border-radius: 0;
+    background: yellowgreen;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.contactus .contactForm .icons{
+    font-size: 1.3rem;
+}
+.contactus .contactForm .fa-google{
+    color: 	#DB4437;
+}
+.contactus .contactForm .fa-facebook{
+    color:#4267B2;
+}
+.contactus .contactForm .fa-twitter{
+    color:#1DA1F2;
+}
+.contactus .contactForm .fa-instagram{
+    color:  #E1306C;
+}
+
+@media(max-width:576px){
+    .contactus .bg-image{
+        display: none;
+    }
+    
+    .contactus{
+        height: 750px;
+    }
+    .fa-map-marker,.fa-paper-plane,.fa-phone{
+        display: none;
+    }
+    .contactus .details p{
+        font-size: 0.9rem;
+    }
+    .contactus .details h5{
+        font-size: 1.2rem;
+    }
+    .contactus .follow{
+        margin-top: -2rem;
+    }
+
+}
+
+@media(min-width:577px) and (max-width:768px){
+    .contactus .follow{
+        margin-top: -2rem;
+    }
+    .contactus{
+        height: 1250px;
+    }
+}

@@ -1,0 +1,45 @@
+.productCards{
+    margin-top: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    min-height: 60vh;
+}
+.productCards .card-body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+.productCards .row{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.productCards h1{
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 4rem;
+}
+.productCards img{
+    height: 250px;
+    width: 100%;
+    margin: auto;
+}
+
+.productCards .card-body{
+    background: whitesmoke;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.productCards .card-text{
+    font-size: 0.9rem;
+}
+.productCards .card-body a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: grey;
+}
+.productCards .card-body .fa{
+    margin-left: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.productCards .card-body a:hover{
+    color: #2ECC71 ;
+}

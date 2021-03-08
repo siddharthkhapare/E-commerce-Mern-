@@ -1,0 +1,92 @@
+
+
+header .container-fluid {
+	max-width: 1500px;
+	width: 100%;
+}
+.navbar{
+	font-family: 'Poppins', sans-serif;
+	background: cornflowerblue;
+	
+}
+
+.navbar-nav .nav-item .nav-link{
+	font-size: 1rem;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	margin-right: 1rem;
+	color: white;
+}
+.navbar .navbar-brand{
+	color: white;
+}
+/* Navigation Sub
+------------------------------------- */
+nav.sub {
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px 0;
+}
+
+/* Navigation Main
+------------------------------------- */
+
+nav.main .nav-logo {
+	max-width: 200px;
+	width: 100%;
+}
+nav.main ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+/* ------ Mega Menu ------ */
+nav.main .megamenu {
+	padding: 20px 20px;
+	position: absolute;
+	top: auto;
+	left: 0;
+	right: 0;
+	max-width: 1500px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(229, 238, 255);
+}
+
+.megamenu h6{
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+	
+}
+
+.megamenu a{
+	
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #525252;
+}
+/* ------ Mid Menu ------ */
+nav.main .midmenu {
+	position: absolute;
+	padding: 20px 20px;
+	float: left;
+	top: auto;
+	left: auto;
+	right: auto;
+	max-width: 650px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dropdown-menu.megamenu.midmenu.show {
+    right: 0;
+  }
+  .dropdown-menu.show {
+    right: 0;
+  }
+
+.navbar #account-btn:focus{
+	box-shadow: none;
+	outline: none !important;
+	text-decoration: none;
+}
