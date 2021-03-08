@@ -47,7 +47,7 @@ function ViewProducts() {
 
     const getData = async () => {
 
-        const res = await Axios.get('http://localhost:9000/api/fetch-products')
+        const res = await Axios.get('https://node-application5thsem.herokuapp.com/fetch-products')
         console.log(res);
 
         if (res.data.status) {
