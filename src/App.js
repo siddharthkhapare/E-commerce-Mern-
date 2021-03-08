@@ -23,20 +23,20 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Route path="/" exact={true} strict component={Home}/>
-        <Route path="/Aboutus" exact={true} strict component={Aboutus}/>
-        <Route path="/Contactus" exact={true} strict component={Contactus}/>
-        <Route path="/login" exact={true} strict component={Login}/>
-        <Route path="/signup" exact={true} strict component={Signup}/>
-        <Route path="/admin" exact={true} strict component={AdminLogin}/>
-        <Route path="/products" exact={true} strict component={Product}/>
-        <Route path="/addingproductsform" exact={true} strict component={AddingProductsForm}/>
-        <Route path="/ViewProducts" exact={true} strict component={ViewProducts}/>
-        <Route path="/mycart" exact={true} strict component={ShoppingCart}/>
-        <Route path="/dashboard" exact={true} strict component={Dashboard}/>
-        <Route path="/updateProduct" exact={true} strict component={UpdateProduct}/>
-        <Route path="/CheckOut" exact={true} strict component={CheckOut}/>
-        <Route path="/ShopByBrand" exact={true} strict component={SBBProduct}/>
+        <Route path="e-commerce-pro/" exact={true} strict component={Home}/>
+        <Route path="e-commerce-pro/Aboutus" exact={true} strict component={Aboutus}/>
+        <Route path="e-commerce-pro/Contactus" exact={true} strict component={Contactus}/>
+        <Route path="e-commerce-pro/login" exact={true} strict component={Login}/>
+        <Route path="e-commerce-pro/signup" exact={true} strict component={Signup}/>
+        <Route path="e-commerce-pro/admin" exact={true} strict component={AdminLogin}/>
+        <Route path="e-commerce-pro/products" exact={true} strict component={Product}/>
+        <Route path="e-commerce-pro/addingproductsform" exact={true} strict component={AddingProductsForm}/>
+        <Route path="e-commerce-pro/ViewProducts" exact={true} strict component={ViewProducts}/>
+        <Route path="e-commerce-pro/mycart" exact={true} strict component={ShoppingCart}/>
+        <Route path="e-commerce-pro/dashboard" exact={true} strict component={Dashboard}/>
+        <Route path="e-commerce-pro/updateProduct" exact={true} strict component={UpdateProduct}/>
+        <Route path="e-commerce-pro/CheckOut" exact={true} strict component={CheckOut}/>
+        <Route path="e-commerce-pro/ShopByBrand" exact={true} strict component={SBBProduct}/>
 
 
       </div>

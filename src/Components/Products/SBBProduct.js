@@ -23,7 +23,7 @@ const cartHandler = (array) => {
             product_price: array.productRate
         }
 
-        Axios.post('http://localhost:9000/api/addtocart/' + user_id, cartItems)
+        Axios.post('https://node-application5thsem.herokuapp.com/api/addtocart/' + user_id, cartItems)
             .then(res => {
                 alert(res.data.message);
                 console.log(res);
@@ -47,7 +47,7 @@ function SBBProduct() {
     const getData = async () => {
         const brand_Name = sessionStorage.getItem('brand_Name');
 
-        const res = await Axios.get('http://localhost:9000/api/shopbybrand/' + brand_Name)
+        const res = await Axios.get('https://node-application5thsem.herokuapp.com/api/shopbybrand/' + brand_Name)
         console.log(res);
 
         if (res.data.status) {

@@ -41,7 +41,7 @@ function Dashboard() {
 
             </div>
                :
-               <Redirect to="/admin" />
+               <Redirect to="https://e-commerceproj.netlify.app/admin" />
            }
         </Fragment>
     )

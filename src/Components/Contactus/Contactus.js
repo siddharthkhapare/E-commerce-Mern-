@@ -19,7 +19,7 @@ function Contactus(props) {
         },
         onSubmit: (values, { resetForm }) => {        
        
-            Axios.post('http://localhost:9000/api/sendmail',values)
+            Axios.post('https://node-application5thsem.herokuapp.com/api/sendmail',values)
             .then(res=> {
                 console.log(res);
                 if(res.status){

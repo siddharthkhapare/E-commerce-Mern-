@@ -21,7 +21,7 @@ function UpdateProduct() {
     const getData = async () => {
 
         const id = localStorage.getItem('_id');
-        const pro = await Axios.get('http://localhost:9000/getsingleproduct/' + id)
+        const pro = await Axios.get('https://node-application5thsem.herokuapp.com/getsingleproduct/' + id)
 
         setData(pro.data);        
     }
@@ -66,7 +66,7 @@ function UpdateProduct() {
         console.log(formValues);
 
         const id = localStorage.getItem('_id');
-        Axios.put('http://localhost:9000/api/find-and-update/' + id,formValues)
+        Axios.put('https://node-application5thsem.herokuapp.com/api/find-and-update/' + id,formValues)
         // e.preventDefault();
         .then(res=>{
             

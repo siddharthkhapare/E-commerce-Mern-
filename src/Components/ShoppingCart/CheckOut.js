@@ -17,7 +17,7 @@ function CheckOut() {
 
         const user_id = window.sessionStorage.getItem("user_id");
 
-        Axios.get('http://localhost:9000/api/getcartdata/' + user_id)
+        Axios.get('https://node-application5thsem.herokuapp.com/api/getcartdata/' + user_id)
             .then(res => {
                 // console.log(res.data.data[0].price);
                 res.data.data.total = 0;

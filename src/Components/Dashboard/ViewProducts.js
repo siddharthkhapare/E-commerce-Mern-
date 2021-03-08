@@ -20,7 +20,7 @@ const deleteHandler = (array) => {
     console.log(array._id);
 
     if (window.confirm('Are you sure to delete product ???')) {
-        Axios.delete('http://localhost:9000/api/delete-product/' + array._id)
+        Axios.delete('https://node-application5thsem.herokuapp.com/api/delete-product/' + array._id)
             .then(res => {
                 console.log(res)
             })
@@ -47,7 +47,7 @@ function ViewProducts() {
 
     const getData = async () => {
 
-        const res = await Axios.get('https://node-application5thsem.herokuapp.com/fetch-products')
+        const res = await Axios.get('https://node-application5thsem.herokuapp.com/api/fetch-products')
         console.log(res);
 
         if (res.data.status) {

@@ -22,7 +22,7 @@ function ShoppingCart() {
         
         const user_id = window.sessionStorage.getItem("user_id");
 
-        Axios.get('http://localhost:9000/api/getcartdata/' + user_id)
+        Axios.get('https://node-application5thsem.herokuapp.com/api/getcartdata/' + user_id)
             .then(res => {
                 // console.log(res.data.data[0].price);
                 res.data.data.total = 0;
@@ -48,7 +48,7 @@ function ShoppingCart() {
         console.log(e.productId);
 
         if (window.confirm('Are you sure to delete product from cart ???')) {
-            Axios.delete('http://localhost:9000/api/del-prod-from-cart/' + e.productId + '/' + user_id)
+            Axios.delete('https://node-application5thsem.herokuapp.com/api/del-prod-from-cart/' + e.productId + '/' + user_id)
                 .then(res => {
                     getData();
                     console.log(res);
@@ -94,7 +94,7 @@ function ShoppingCart() {
         //     document.getElementById('cart')
         // );
     
-        Axios.post('http://localhost:9000/api/checkQuantity',data)
+        Axios.post('https://node-application5thsem.herokuapp.com/api/checkQuantity',data)
         .then(res=> {
             console.log(res);
             if(res.data.data){
@@ -140,7 +140,7 @@ function ShoppingCart() {
         return;
     }
     var pricedata = {'price':newobj.total }
-    const result = await Axios.post("http://localhost:9000/api/orders" ,pricedata);
+    const result = await Axios.post("https://node-application5thsem.herokuapp.com/api/orders" ,pricedata);
     console.log(result);
     if (!result) {
         alert("Server error. Are you online?");
@@ -170,7 +170,7 @@ function ShoppingCart() {
             newdata.push({product:data},{razorpayPaymentId: response.razorpay_payment_id});
             
 
-             await Axios.post("http://localhost:9000/payment/success", newdata)
+             await Axios.post("https://node-application5thsem.herokuapp.com/payment/success", newdata)
             .then (res=>{
                 
                 console.log(res.data.success);
@@ -182,7 +182,7 @@ function ShoppingCart() {
               
                 if(res.data.success){
                                         
-                    Axios.delete('http://localhost:9000/api/delete-cart/' + cartId)
+                    Axios.delete('https://node-application5thsem.herokuapp.com/api/delete-cart/' + cartId)
                     .then(res => {                        
                         console.log(res.data);
                     })

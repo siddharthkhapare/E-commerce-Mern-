@@ -69,7 +69,7 @@ const AddingProductsForm = () => {
         }
         console.log(formValues);
 
-        axios.post('http://localhost:9000/addproduct', formValues)
+        axios.post('https://node-application5thsem.herokuapp.com/addproduct', formValues)
             .then(res => {
                 console.log('status 200', res);
             })

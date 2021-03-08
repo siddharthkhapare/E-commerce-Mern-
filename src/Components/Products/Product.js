@@ -24,7 +24,7 @@ const cartHandler = (array) => {
             product_price: array.productRate
         }
 
-        Axios.post('http://localhost:9000/api/addtocart/' + user_id, cartItems)
+        Axios.post('https://node-application5thsem.herokuapp.com/api/addtocart/' + user_id, cartItems)
             .then(res => {
                 alert(res.data.message);
                 console.log(res);
@@ -51,7 +51,7 @@ function Product() {
     const getData = async () => {
         const product_name = sessionStorage.getItem('product_Name');
 
-        const res = await Axios.get('http://localhost:9000/api/get-products/' + product_name)
+        const res = await Axios.get('https://node-application5thsem.herokuapp.com/api/get-products/' + product_name)
         console.log(res.data);
 
         if (res.data.status) {
